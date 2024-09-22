@@ -3,7 +3,6 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <main>
       <section>
         <div
           style={{
@@ -11,7 +10,7 @@ export default function Home() {
             backgroundPosition: "center",
             backgroundSize: "cover",
             height: "100%",
-            width: "100%",
+            width: "100vw",
           }}
           className="flex items-center justify-between"
         >
@@ -20,16 +19,15 @@ export default function Home() {
             src={"/strawberry-grain.webp"}
             width={170}
             height={100}
-            className=""
           />
           <Image
             alt="blue berries bowl"
             src={"/img-fruit-bowl.webp"}
             width={210}
             height={200}
+            className="lg:absolute right-0 top-0"
           />
         </div>
       </section>
-    </main>
   );
 }
