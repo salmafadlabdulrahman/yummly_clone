@@ -14,6 +14,7 @@ import {
 const Sidebar = () => {
   const tabs = [];
   const tabsContent = [];
+
   for (const [key, val] of Object.entries(sidebarTabs)) {
     tabs.push(key);
     tabsContent.push(val);
@@ -25,10 +26,12 @@ const Sidebar = () => {
         <Image src={"/yummly.svg"} alt="logo" width={80} height={80} />
         <CustomButton text="Sign Up / Log In" background="#3a9691" />
 
-        <div className="mt-3">
+        <div className={`mt-3 h-[420px] overflow-auto`}>
           <ul className="text-left">
             {tabs.map((tab, index) => (
-              <SidebarTab key={tab} tab={tab} values={tabsContent[index]} />
+              <div className="border-b-[1px] border-[#e0e0e0]" key={tab}>
+                <SidebarTab tab={tab} values={tabsContent[index]} />
+              </div>
             ))}
           </ul>
         </div>

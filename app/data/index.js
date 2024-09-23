@@ -17,7 +17,13 @@ export const footerTabs = [
   "Do Not Sell My Personal Information",
 ];
 
-
+/*export const socialIcons = {
+  'faFacebookF': "w-[12px]",
+  faPinterestP: "w-[13px]",
+  faInstagram: "w-[13px]",
+  faYoutube: "w-[19px]",
+  faTiktok: "w-[13px]",
+}*/
 
 
 

@@ -6,25 +6,25 @@ import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const SidebarTab = ({ tab, values }: SidebarTabProps) => {
   const [open, setOpen] = useState(false);
-  const openTab = (): void => {
+  const openTab = () => {
     setOpen((val) => !val);
   };
   return (
     <div>
       <li
-        className="flexBetween pt-4 border-b-[1px] border-[#e0e0e0] pb-3"
+        className="flexBetween pt-4 pb-3"
         key={tab}
       >
         <span className="text-[13px] font-bold text-[#242424]">{tab}</span>
         {values.length > 0 ? (
           !open ? (
             <ChevronRightIcon
-              className="size-4 text-[#3a9691] font-bold "
+              className="size-4 text-[#3a9691] font-bold cursor-pointer"
               onClick={openTab}
             />
           ) : (
             <ChevronDownIcon
-              className="size-4 text-[#3a9691] font-bold"
+              className="size-4 text-[#3a9691] font-bold cursor-pointer"
               onClick={openTab}
             />
           )
@@ -37,7 +37,7 @@ const SidebarTab = ({ tab, values }: SidebarTabProps) => {
         <div>
           {values.map((item) => (
             <p
-              className="text-[#707070] text-[13px] pt-3 font-medium"
+              className="text-[#707070] text-[13px] pt-3 font-medium pb-3"
               key={item}
             >
               {item}
