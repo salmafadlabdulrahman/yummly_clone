@@ -13,7 +13,7 @@ import {
 
 const Sidebar = () => {
   const tabs = [];
-  const tabsContent = [];
+  const tabsContent:string[][] = [];
 
   for (const [key, val] of Object.entries(sidebarTabs)) {
     tabs.push(key);
