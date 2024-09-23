@@ -9,6 +9,7 @@ export default function Home() {
             backgroundImage: "url('/banner-marble-bkg.jpg')",
             backgroundPosition: "center",
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             height: "100%",
             width: "100vw",
           }}
