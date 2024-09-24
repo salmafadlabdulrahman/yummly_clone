@@ -17,18 +17,11 @@ export const footerTabs = [
   "Do Not Sell My Personal Information",
 ];
 
-/*export const socialIcons = {
-  'faFacebookF': "w-[12px]",
-  faPinterestP: "w-[13px]",
-  faInstagram: "w-[13px]",
-  faYoutube: "w-[19px]",
-  faTiktok: "w-[13px]",
-}*/
 
 export const cuisinesData = [
   ["american.jfif", "american"],
-  ["american.jfif", "kid-friendly"],
-  ["american.jfif", "italian"],
-  ["american.jfif", "asian"],
+  ["kid-friendly.jfif", "kid-friendly"],
+  ["italian.jpg", "italian"],
+  ["asian.jpg", "asian"],
 ]
 
