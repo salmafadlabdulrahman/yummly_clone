@@ -33,7 +33,7 @@ export default function Home() {
             className="lg:absolute right-0 top-0"
           />
         </div>
-        <div className="mt-[3em] flex flex-col relative">
+        <div className="mt-[3em] flex flex-col">
           {" "}
           <div className="text-center lg:absolute left-[620px]">
             <h4 className="uppercase text-[12px] text-[#707070]">
