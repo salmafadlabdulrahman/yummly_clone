@@ -19,8 +19,8 @@ export const footerTabs = [
 
 
 export const cuisinesData = [
-  ["american.jfif", "american"],
-  ["kid-friendly.jfif", "kid-friendly"],
+  ["american.jpg", "american"],
+  ["kid-friendly.jpg", "kid-friendly"],
   ["italian.jpg", "italian"],
   ["asian.jpg", "asian"],
 ]
