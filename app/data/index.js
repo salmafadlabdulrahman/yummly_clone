@@ -25,5 +25,10 @@ export const footerTabs = [
   faTiktok: "w-[13px]",
 }*/
 
-
+export const cuisinesData = [
+  ["american.jfif", "american"],
+  ["american.jfif", "kid-friendly"],
+  ["american.jfif", "italian"],
+  ["american.jfif", "asian"],
+]
 

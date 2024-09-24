@@ -15,7 +15,7 @@ const SidebarTab = ({ tab, values }: SidebarTabProps) => {
         className="flexBetween pt-4 pb-3"
         key={tab}
       >
-        <span className="text-[13px] font-bold text-[#242424]">{tab}</span>
+        <span className={`text-[13px] font-bold ${open ? "text-[#3a9691]" : "text-[#242424]" } `}>{tab}</span>
         {values.length > 0 ? (
           !open ? (
             <ChevronRightIcon

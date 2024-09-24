@@ -26,7 +26,7 @@ const Sidebar = () => {
         <Image src={"/yummly.svg"} alt="logo" width={80} height={80} />
         <CustomButton text="Sign Up / Log In" background="#3a9691" />
 
-        <div className={`mt-3 h-[420px] overflow-auto`}>
+        <div className={`mt-3 h-[390px] overflow-auto`}>
           <ul className="text-left">
             {tabs.map((tab, index) => (
               <div className="border-b-[1px] border-[#e0e0e0]" key={tab}>

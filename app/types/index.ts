@@ -7,3 +7,8 @@ export interface SidebarTabProps {
     tab: string;
     values: string[];
 }
+
+export interface CuisineProps {
+    img: string;
+    title: string
+}
