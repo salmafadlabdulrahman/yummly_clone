@@ -52,4 +52,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-/*border-solid border-2 border-indigo-600 */

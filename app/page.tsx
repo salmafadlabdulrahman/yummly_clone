@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Cuisines from "./components/Cuisines";
 import { cuisinesData } from "./data";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
           height: "600px",
           width: "100vw",
         }}
-        className=""
       >
         {" "}
         <div className="flex items-center justify-between">
@@ -30,20 +30,12 @@ export default function Home() {
             src={"/img-fruit-bowl.webp"}
             width={210}
             height={200}
-            className="lg:absolute right-0 top-0"
+            className="md:absolute right-0 top-0"
           />
         </div>
-        <div className="mt-[3em] flex flex-col">
-          {" "}
-          <div className="text-center lg:absolute left-[620px]">
-            <h4 className="uppercase text-[12px] text-[#707070]">
-              Personalize Your Experience
-            </h4>
-            <h2 className="text-[#4a4a4a] font-bold text-[1.3em] lg:text-[2em]">
-              What are your favorite cuisines?
-            </h2>
-          </div>
-          <section className="flex items-center gap-4 mt-10 lg:mt-[7em] pl-5 overflow-x-scroll hide-scrollbar relative">
+        <div className="mt-[3em] md:mt-0 flex flex-col">
+          <Hero />
+          <section className="flex items-center gap-4 mt-10 md:mt-[7em] pl-5 overflow-x-scroll hide-scrollbar relative">
               {cuisinesData.map((cuisine) => (
                 <div key={cuisine[0]}>
                   <Cuisines img={cuisine[0]} title={cuisine[1]} />
