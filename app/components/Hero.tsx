@@ -4,10 +4,10 @@ import { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const Hero = () => {
-  const [searchField, setSearchField] = useState("");
+  //const [searchField, setSearchField] = useState("");
   return (
-    <div className="lg:w-[78%]">
-      <div className="text-center  lg:max-w-[650px] lg:w-[100%] lg:m-auto">
+    <div className="lg:w-[80%]">
+      <div className="text-center lg:max-w-[650px] lg:w-[100%] lg:m-auto">
         <div className="hidden lg:flex items-center bg-white w-[100%] h-[55px] rounded-full cursor-pointer shadow-lg shadow-gray-500/40">
           <MagnifyingGlassIcon className="size-6" />
           <input
