@@ -6,7 +6,7 @@ const Hero = () => {
   //const [searchField, setSearchField] = useState("");
   return (
     <div className="lg:w-[80%]">
-      <div className="text-center lg:max-w-[630px] lg:w-[100%] lg:m-auto">
+      <div className="text-center lg:max-w-[630px] lg:w-[100%] lg:m-auto ">
         <div className="hidden lg:flex items-center bg-white w-[100%] h-[55px] rounded-full cursor-pointer shadow-lg shadow-gray-500/40">
           <MagnifyingGlassIcon className="size-6 ml-3" />
           <input
