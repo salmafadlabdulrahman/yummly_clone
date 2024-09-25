@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="mt-[3em] md:mt-0 flex flex-col">
           <Hero />
-          <section className="flex items-center gap-4 mt-10 md:mt-[7em] pl-5 overflow-x-scroll hide-scrollbar relative">
+          <section className="flex items-center gap-4 mt-10 md:mt-[7em] lg:mt-3 pl-5 overflow-x-scroll hide-scrollbar relative"> {/*mt-10 md:mt-[7em] */}
               {cuisinesData.map((cuisine) => (
                 <div key={cuisine[0]}>
                   <Cuisines img={cuisine[0]} title={cuisine[1]} />
