@@ -6,20 +6,26 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
-  const [openSidebar, setOpenSidebar] = useState(true);
+  const [mobileOpenSidebar, setMobileOpenSidebar] = useState(false);
+  const sidebarToggle = () => {
+    setMobileOpenSidebar(!mobileOpenSidebar);
+  };
 
+  const closeSidebar = () => {
+    setMobileOpenSidebar(false);
+  };
   return (
     <div className="relative">
       <header
         className={`py-4 px-3 bg-white ${
-          openSidebar ? "absolute " : "fixed"
+          mobileOpenSidebar ? "absolute " : "fixed"
         } w-full `}
       >
         <nav className="flexBetween px-3">
           <div className="flex items-center gap-3">
             <Bars3Icon
               className="size-6 text-gray-400 cursor-pointer"
-              onClick={() => setOpenSidebar((val) => !val)}
+              onClick={sidebarToggle}
             />
             <Image src={"/yummly.svg"} alt="logo" width={65} height={65} />
           </div>
@@ -28,8 +34,13 @@ const Navbar = () => {
             <MagnifyingGlassIcon className="size-6" />
           </div>
         </nav>
+
+        <div
+          className={`${mobileOpenSidebar ? "fixed inset-0 bg-black bg-opacity-50 z-[40]" : ""}`}
+          onClick={closeSidebar}
+        ></div>
       </header>
-      {openSidebar && (
+      {mobileOpenSidebar && (
         <div className="relative">
           <div className="absolute z-[50] top-0">
             <Sidebar />
