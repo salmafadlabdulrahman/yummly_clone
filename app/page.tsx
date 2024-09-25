@@ -43,12 +43,12 @@ export default function Home() {
               What are your favorite cuisines?
             </h2>
           </div>
-          <section className="flex items-center gap-4 mt-10 lg:mt-[7em] pl-5 overflow-x-scroll hide-scrollbar">
-            {cuisinesData.map((cuisine) => (
-              <div key={cuisine[0]}>
-                <Cuisines img={cuisine[0]} title={cuisine[1]} />
-              </div>
-            ))}
+          <section className="flex items-center gap-4 mt-10 lg:mt-[7em] pl-5 overflow-x-scroll hide-scrollbar relative">
+              {cuisinesData.map((cuisine) => (
+                <div key={cuisine[0]}>
+                  <Cuisines img={cuisine[0]} title={cuisine[1]} />
+                </div>
+              ))}
           </section>
         </div>
       </div>

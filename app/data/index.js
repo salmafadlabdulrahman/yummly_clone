@@ -23,7 +23,7 @@ export const cuisinesData = [
   ["kid-friendly.jpg", "kid-friendly"],
   ["italian.jpg", "italian"],
   ["asian.jpg", "asian"],
-  ["taco.jpg", "Mexican"],
+  ["mexican.jpg", "Mexican"],
   ["fried-fish.jpg", "Southern & soul food"],
   ["french.jpg", "French"],
   ["southwestern.jpg", "southwestern"],

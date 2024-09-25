@@ -37,7 +37,7 @@ const Sidebar = () => {
         </div>
 
         <div className="bg-[#f5f5f5]">
-          <ul className="text-left  p-3">
+          <ul className="text-left p-3">
             {footerTabs.map((item) => (
               <li
                 key={item}
