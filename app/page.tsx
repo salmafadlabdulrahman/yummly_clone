@@ -30,17 +30,19 @@ export default function Home() {
             src={"/img-fruit-bowl.webp"}
             width={210}
             height={200}
-            className="md:absolute right-0 top-0"
+            className="absolute right-0 lg:top-0"
           />
+          <Image src={"/img-strawberry.webp"} alt="strawberry" width={100} height={100} className="absolute right-[50px] top-[150px]" />
         </div>
-        <div className="mt-[3em] md:mt-0 flex flex-col">
+        <div className="mt-[3em] md:mt-0 lg:mt-0 flex flex-col">
           <Hero />
-          <section className="flex items-center gap-4 mt-10 md:mt-[7em] lg:mt-3 pl-5 overflow-x-scroll hide-scrollbar relative"> {/*mt-10 md:mt-[7em] */}
-              {cuisinesData.map((cuisine) => (
-                <div key={cuisine[0]}>
-                  <Cuisines img={cuisine[0]} title={cuisine[1]} />
-                </div>
-              ))}
+          <section className="flex items-center gap-4 mt-10 md:mt-[2em] lg:mt-3 pl-5 overflow-x-scroll hide-scrollbar relative">
+            {" "}
+            {cuisinesData.map((cuisine) => (
+              <div key={cuisine[0]}>
+                <Cuisines img={cuisine[0]} title={cuisine[1]} />
+              </div>
+            ))}
           </section>
         </div>
       </div>
