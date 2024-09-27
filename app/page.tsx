@@ -54,20 +54,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lg:w-[80%]">
-        <div className="text-center">
+      <div className="lg:w-[85%]">
+        <div className="flex flex-col justify-center items-center">
           <CustomButton
             text="Next"
             background="#3a9691"
             height={45}
             width={145}
           />
+          <p className="mt-5 text-[#bababa] text-[13px] font-semibold xl:absolute xl:right-[30px]">
+            Don&apos;t Personalize My Recommendations
+          </p>
         </div>
-        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center ">
-          Don&apos;t Personalize My Recommendations
-        </p>
       </div>
     </section>
   );
 }
-
