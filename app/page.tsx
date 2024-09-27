@@ -52,7 +52,7 @@ export default function Home() {
             ))}
           </section>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-[86%]">
+        <div className="flex flex-col items-center justify-center mt-5 lg:w-[86%]">
           <CustomButton
             text="Next"
             background="#3a9691"
@@ -60,7 +60,7 @@ export default function Home() {
             width={145}
           />
         </div>
-        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center lg:flex lg:justify-end lg:w-[84%]">
+        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center  lg:flex lg:justify-end lg:w-[84%]">
           Don&apos;t Personalize My Recommendations
         </p>
       </div>
