@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:w-[80%]">
+      <div className="lg:w-[80%]">
         <div className="text-center">
           <CustomButton
             text="Next"
