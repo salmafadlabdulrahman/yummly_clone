@@ -31,7 +31,7 @@ export default function Home() {
             src={"/img-fruit-bowl.webp"}
             width={210}
             height={200}
-            className="absolute right-0 lg:top-0"
+            className="lg:absolute lg:right-0 lg:top-0"
           />
           <Image
             src={"/img-strawberry.webp"}
@@ -52,7 +52,10 @@ export default function Home() {
             ))}
           </section>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 lg:w-[86%]">
+      </div>
+
+      <div className="md:w-[80%]">
+        <div className="text-center">
           <CustomButton
             text="Next"
             background="#3a9691"
@@ -60,10 +63,11 @@ export default function Home() {
             width={145}
           />
         </div>
-        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center  lg:flex lg:justify-end lg:w-[84%]">
+        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center ">
           Don&apos;t Personalize My Recommendations
         </p>
       </div>
     </section>
   );
 }
+
