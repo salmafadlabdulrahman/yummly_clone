@@ -24,7 +24,7 @@ const Sidebar = () => {
     <div className="bg-white w-[210px]">
       <div className="text-center flexCol pt-9">
         <Image src={"/yummly.svg"} alt="logo" width={80} height={80} />
-        <CustomButton text="Sign Up / Log In" background="#3a9691" />
+        <CustomButton text="Sign Up / Log In" background="#3a9691" height={41} width={180} />
 
         <div className={`mt-3 h-[390px] overflow-auto`}>
           <ul className="text-left">

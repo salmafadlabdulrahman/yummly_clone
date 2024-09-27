@@ -3,6 +3,7 @@ import "./globals.css";
 import Cuisines from "./components/Cuisines";
 import { cuisinesData } from "./data";
 import Hero from "./components/Hero";
+import CustomButton from "./components/CustomButton";
 
 export default function Home() {
   return (
@@ -32,7 +33,13 @@ export default function Home() {
             height={200}
             className="absolute right-0 lg:top-0"
           />
-          <Image src={"/img-strawberry.webp"} alt="strawberry" width={100} height={100} className="absolute right-[50px] top-[150px]" />
+          <Image
+            src={"/img-strawberry.webp"}
+            alt="strawberry"
+            width={100}
+            height={100}
+            className="absolute right-[50px] top-[150px]"
+          />
         </div>
         <div className="mt-[3em] md:mt-0 lg:mt-0 flex flex-col">
           <Hero />
@@ -45,6 +52,17 @@ export default function Home() {
             ))}
           </section>
         </div>
+        <div className="flex flex-col items-center justify-center mt-5 w-[86%]">
+          <CustomButton
+            text="Next"
+            background="#3a9691"
+            height={45}
+            width={145}
+          />
+        </div>
+        <p className="mt-5 text-[#bababa] text-[13px] font-semibold text-center w-[86%]">
+          Don&apos;t Personalize My Recommendations
+        </p>
       </div>
     </section>
   );
